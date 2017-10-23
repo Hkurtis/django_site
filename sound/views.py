@@ -7,7 +7,7 @@ def index(request):
     all_shows = Show.objects.all()
     #template = loader.get_template('sound/index.html')
     context = { 'all_shows': all_shows }
-    return render(request, 'sound/index.html', context)
+    return render(request, 'sound/sound_index.html', context)
 
 def detail(request, show_num):
     try:

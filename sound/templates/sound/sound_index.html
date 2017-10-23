@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include "sound/header.html" %}
+  </head>
+  {%block content%}
+  <body>
+    <br>
+    	{% if all_shows %}
+    	  <ul>
+    	    {% for s in all_shows%}
+    	    <li><a href="/sound/{{ s.show_num }}">{{ s.title }}</a></li>
+    	    {% endfor %}
+    	  </ul>
+    	{% else %}
+    	  <h3> No shows yet to display </h3>
+    	{% endif %}
+  </body>
+  {% endblock %}
+</html>

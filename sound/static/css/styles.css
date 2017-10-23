@@ -2,10 +2,33 @@ body{
   background: white;
 }
 h3{
-  background: grey;
-  border-color: orange;
   border-radius: 5px;
-  border-style: dashed;
+  background: red;
   color: black;
-  padding: 10px;
+}
+
+.navb{
+  align-items: center;
+  background: black;
+  color: lightgrey;
+  display: flex;
+  padding: 15px;
+  width: 100%;
+}
+.navb .logo{
+  border-radius: 10px;
+  color: lightgrey;
+}
+.navb .item{
+  padding-left: 10px;
+}
+.navb .item a{
+  text-decoration: none;
+  color: lightgrey;
+}
+.navb .item a:hover{
+  color: red;
+}
+.navb .search{
+  padding-left: 10px;
 }
