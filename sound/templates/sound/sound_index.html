@@ -5,6 +5,8 @@
   </head>
   {%block content%}
   <body>
+    {% load staticfiles %}
+    <img class="main_img" src="{%static 'media/cds.jpg' %}">
     <br>
     	{% if all_shows %}
     	  <ul>
@@ -13,8 +15,9 @@
     	    {% endfor %}
     	  </ul>
     	{% else %}
-    	  <h3> No shows yet to display </h3>
+    	  <h3 class="no_show"> No shows yet to display </h3>
     	{% endif %}
   </body>
   {% endblock %}
+  {% include "sound/footer.html"%}
 </html>

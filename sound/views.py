@@ -16,3 +16,6 @@ def detail(request, show_num):
         raise Http404("There is no podcast under this index yet!")
     #return HttpResponse('<h1> This is show #'+str(show_num)+'</h1>')
     return render(request, 'sound/detail.html', {'s': s})
+
+def about(request):
+    return render(request,'sound/about.html')
